@@ -1,0 +1,140 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Estilos específicos para la página de detalle de fruta */
+  
+  .detalle-fruta {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detalle-fruta h1 {
+    margin-top: 0;
+  }
+  
+  .detalle-fruta p {
+    margin-bottom: 10px;
+  }
+  
+  .detalle-fruta a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .detalle-fruta a:last-child {
+    margin-bottom: 0;
+  }
+
+  .fruta-form {
+    text-align: center;
+  }
+  
+  .fruta-form h1 {
+    margin-top: 0;
+  }
+  
+  .fruta-form button[type="submit"] {
+    margin-top: 20px;
+  }
+  
+  .fruta-form a {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .eliminar-fruta {
+    text-align: center;
+  }
+  
+  .eliminar-fruta h1 {
+    margin-top: 0;
+    color: #e74c3c;
+  }
+  
+  .eliminar-fruta p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .eliminar-fruta button[type="submit"] {
+    margin-top: 20px;
+  }
+  
+  .eliminar-fruta a {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .lista-frutas {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lista-frutas h1 {
+    margin-top: 0;
+  }
+  
+  .lista-frutas a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .lista-frutas ul {
+    margin-top: 20px;
+  }
+  
+  .lista-frutas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lista-frutas li a {
+    flex-grow: 1;
+  }
+  
+  .lista-frutas li a:first-child {
+    font-weight: bold;
+  }  

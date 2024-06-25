@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Frutas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="lista-frutas">
+        <h1>Lista de Frutas</h1>
+        <a href="{% url 'nueva_fruta' %}">Agregar Nueva Fruta</a>
+        <ul>
+            {% for fruta in frutas %}
+                <li>
+                    <a href="{% url 'detalle_fruta' fruta.id %}">{{ fruta.nombre }}</a>
+                    <a href="{% url 'editar_fruta' fruta.id %}">Editar</a>
+                    <a href="{% url 'eliminar_fruta' fruta.id %}">Eliminar</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

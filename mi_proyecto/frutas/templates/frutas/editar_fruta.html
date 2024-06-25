@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if form.instance.pk %}Editar{% else %}Nueva{% endif %} Fruta</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="fruta-form">
+        <h1>{% if form.instance.pk %}Editar{% else %}Nueva{% endif %} Fruta</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% if form.instance.pk %}Actualizar{% else %}Crear{% endif %}</button>
+        </form>
+        <a href="{% url 'lista_frutas' %}">Volver a la lista</a>
+    </div>
+</body>
+</html>
